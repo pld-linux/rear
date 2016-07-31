@@ -1,0 +1,3 @@
+MAILTO=root
+
+30 1 * * * root /usr/sbin/rear checklayout || /usr/sbin/rear mkrescue
