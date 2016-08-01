@@ -2,12 +2,12 @@ Summary:	Relax-and-Recover is a Linux disaster recovery and system migration too
 Name:		rear
 Version:	1.18
 Release:	0.1
-License:	GPL v3
+License:	GPL-2.0+ and GPL-3.0
 Group:		Applications/File
 # as GitHub stopped with download section we need to go back to Sourceforge for downloads
 Source0:	https://sourceforge.net/projects/rear/files/rear/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	ce12c1c036207e71750d64d89c072b55
-Source1:	rear.cron
+Source1:	%{name}.cron
 URL:		http://relax-and-recover.org/
 # rear contains only bash scripts plus documentation so that on first glance it could be "BuildArch: noarch"
 # but actually it is not "noarch" because it only works on those architectures that are explicitly supported.
